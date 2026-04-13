@@ -106,11 +106,11 @@ export default function InputPanel({ onSimulate, disabled }) {
               value={refString}
               onChange={(e) => setRefString(e.target.value)}
               placeholder="e.g., 7,0,1,2,0,3,0,4,2,3"
-              className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm font-mono transition-shadow"
+              className="min-w-0 flex-1 px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm font-mono transition-shadow"
             />
             <button
               onClick={generateRandom}
-              className="px-4 py-2.5 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm font-medium whitespace-nowrap"
+              className="shrink-0 px-4 py-2.5 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm font-medium whitespace-nowrap"
               title="Generate random reference string"
             >
               Random

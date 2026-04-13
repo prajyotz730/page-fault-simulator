@@ -80,13 +80,13 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left Panel: Config */}
-          <div className="lg:col-span-4 xl:col-span-3 space-y-6">
+          <div className="lg:col-span-4 space-y-6">
             <InputPanel onSimulate={handleSimulate} disabled={false} />
             {results.length === 0 && <TheoryPanel />}
           </div>
 
           {/* Right Panel: Results */}
-          <div className="lg:col-span-8 xl:col-span-9 space-y-6">
+          <div className="lg:col-span-8 space-y-6">
             {results.length === 0 ? (
               <div className="flex flex-col items-center justify-center py-20 text-center">
                 <div className="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
